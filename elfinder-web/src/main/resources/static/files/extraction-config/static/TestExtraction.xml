@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <Parameters>
+        <TextQualifierYN>Y</TextQualifierYN>
+        <Delimiter>,</Delimiter>
+        <ConsiderBIParmsYN>N</ConsiderBIParmsYN>
+    </Parameters>
+    <Extractions>
+        <Extraction ExtractFileName="TestExtract_11_1101_loghd.csv">
+            <CompanyID>11</CompanyID>
+            <Tables>
+                <Table>
+                    <ModuleName>SO</ModuleName>
+                    <TableName>loghd</TableName>
+                    <Columns>
+                        <Column FieldName="HEADERLI" />
+                        <Column FieldName="POSTDATE" />
+                        <Column FieldName="INVOICE" />
+                        <Column FieldName="DOCTYPE" />
+                        <Column FieldName="DEPT" />
+                        <Column FieldName="WIPNO" />
+                        <Column FieldName="SLPLAC" />
+                        <Column FieldName="CHASSIS" />
+                        <Column FieldName="SERVCODE" />
+                        <Column FieldName="MILEAGE" />
+                        <Column FieldName="TARMAGIC" />
+                        <Column FieldName="OPERATOR" />
+                        <Column FieldName="ACCOMP"/>
+                        <Column FieldName="MAGICLH"/>
+                        <Column FieldName="WIPCREAT"/>
+                        <Column FieldName="KDBTIME"/>
+                    </Columns>
+                    <Filters>
+                        <Filter>
+                            <Column>"KDBTIME"</Column>
+                            <Operand>">="</Operand>
+                            <Value>"01/01/1970"</Value>
+                        </Filter>
+                    </Filters>
+                </Table>
+            </Tables>
+        </Extraction>
+    </Extractions>
+</root>
