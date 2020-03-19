@@ -1,0 +1,41 @@
+{
+  "ExtractFileName": "TestExtract_11_loghd.csv",
+  "CompanyID": "11",
+  "Tables": [
+    {
+      "ModuleName": "SO",
+      "TableName": "loghd",
+      "Columns": [
+        "MAGICLH",  "ACCOMP",  "ADDTYPE",  "AKDOCREF",  "AKDOCREF_2",  "BATCHID",  "BATCHID_2",  "CHASSIS",  "CHECKED",  "COMMAGIC",  "CREATED",
+        "CRREASCD",  "CRREASON",  "CURRENCY",  "CUSTDISC",  "DAYBOOK",  "DAYBOOK_2",  "DBITEM",  "DBITEM_2",  "DBTYPE",  "DEMTRMAG",  "DEPT",
+        "DOCNO",  "DOCTYPE",  "EXCHANGE",  "EXPARCID",  "FIRSTINV",  "GROSS",  "HEADERLINK",  "INVOICE",  "INVOICE_2",  "JNLCLASS",  "JNLCLASS_2",
+        "JOURTYPE",  "JOURTYPE_2",  "KDBPART",  "KDBTIME",  "KDBUSER",  "MANSERCODE",  "MILEAGE",  "MKHISTOK",  "MODELCDE",  "NET",  "NEWWIP",
+        "NLBATCH",  "NLBATCH_2",  "NLITEM",  "NLITEM_2",  "NLLINES",  "NLLINES_2",  "NOTAXREGN",  "OPERATOR",  "OPOWNER",  "ORIGMODULE",  "POSTDATE",
+        "RECOVER",  "RECOVPREVLOG",  "REGNO",  "SERVCODE",  "SERVCODE_2",  "SERVCODE_3",  "SLMAGIC",  "SLPLAC",  "STATUS",  "TARMAGIC",  "TAXDOCNO",
+        "TAXREGN",  "TERMINAL",  "TIME",  "USERID",  "USERTERM",  "VEHMAGIC",  "VHCOPERATOR",  "VHCTECHNICIAN",  "VSBNO",  "WIPCREAT",  "WIPNO"
+      ],
+      "Filters": [
+        {
+          "Column": "KDBTIME",
+          "Operand": ">=",
+          "Value": "$(-1d)"
+        },
+        {
+          "Column": "KDBTIME",
+          "Operand": ">=",
+          "Value": "$(-1w)"
+        },
+        {
+          "Column": "KDBTIME",
+          "Operand": ">=",
+          "Value": "$(PLACE_HOLDER)"
+        },
+        {
+          "Column": "MAGICLH",
+          "Operand": ">",
+          "Value": "0"
+        }
+      ]
+    }
+  ]
+}
